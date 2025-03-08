@@ -1,0 +1,54 @@
+.navbar-custom {
+  background: linear-gradient(135deg, #4b0082, #1e90ff);
+  padding: 15px 20px;
+  transition: background 0.5s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  transition: color 0.5s ease-in-out;
+  animation: brandColorChange 5s infinite alternate ease-in-out;
+}
+
+@keyframes brandColorChange {
+  0% { color: #ff8800; }
+  50% { color: #ffd700; }
+  100% { color: #ff4500; }
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+.navbar-custom .navbar-toggler {
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
+  transform: rotate(180deg);
+}
+
+  
